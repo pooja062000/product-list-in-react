@@ -1,5 +1,7 @@
-
+import my from '../src/Assets/Images/log.png'
 import React from "react";
+
+
 class Header extends React.Component {
     constructor(props) {
         super(props)
@@ -16,32 +18,22 @@ render() {
         
         <div className="header-row">
             <div className="logo-box">
-            <h1 className="logo-text">Flipkart</h1>
+           
+                <img src={my} alt="my" className="hi" />
+          
             </div>
 
-            <div className="icon-box">
-                <div className="social-icon-main">
-                <div className="social-icon">
-                <i class="fa fa-user"></i>
-                </div>
+              <div className="navbarr">
                 
-                <div className="social-icon2">
-            
-                        <a href="https://github.com/pooja062000?tab=repositories" target="blank"><i class="fa fa-github"></i></a>
+              <div className="seller">Become a Seller</div>
+              <div className="pro">Download App</div>
+              <div className="pro">Profile</div>
+              <div className="pro">Cart</div>
 
-                </div>
-
-                <div className="social-icon3">
-                
-                <a href="https://www.facebook.com/poojaggarwal2000" target="blank"><i class="fa fa-facebook"></i></a>
-                </div>
-                
-                <div className="social-icon3">
-                <a href="https://www.myntra.com" target="blank"><i class="fa fa-shopping-bag"></i></a>
-                </div>
+              </div>
+         
             </div>
-        </div>
-        </div>
+       
         </>
     )
 }
